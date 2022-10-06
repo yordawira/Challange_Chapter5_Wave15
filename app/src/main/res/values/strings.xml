@@ -1,3 +1,48 @@
 <resources>
     <string name="app_name">Challange_Chapter5_Wave15</string>
+    <string name="paper">Kertas</string>
+    <string name="scissor">Gunting</string>
+    <string name="rock">Batu</string>
+    <string name="versus">VS</string>
+    <string name="player">Pemain 1</string>
+    <string name="com">COM</string>
+    <string name="win">&lt;font color=#FFFFFF>
+        &lt;small>&lt;small>&lt;small>&lt;small>&lt;small>
+        \t Pemain 1\t
+        &lt;br>
+        \tMENANG!\t
+        &lt;/small>&lt;/small>&lt;/small>&lt;/small>&lt;/small>&lt;/font>
+    </string>
+    <string name="lose">&lt;font color=#FFFFFF>
+        &lt;small>&lt;small>&lt;small>&lt;small>&lt;small>
+        \t Pemain 2\t
+        &lt;br>
+        \tMENANG!\t
+        &lt;/small>&lt;/small>&lt;/small>&lt;/small>&lt;/small>&lt;/font>
+    </string>
+    <string name="draw">&lt;font color=#FFFFFF>
+        &lt;small>&lt;small>&lt;small>&lt;small>&lt;small>
+        \t DRAW\t
+        &lt;/small>&lt;/small>&lt;/small>&lt;/small>&lt;/small>&lt;/font>
+    </string>
+    <string name="play_game_with">Bermain suit melawan</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="sesama_pemain">sesama pemain.</string>
+    <string name="komputer">komputer.</string>
+    <string name="write_name">Tuliskan namamu di bawah</string>
+    <string name="choose_opponent">PILIH LAWANMU</string>
+    <string name="user_vs_user">User vs User</string>
+    <string name="user_vs_com">User vs CPU</string>
+    <string name="pemain_2">Pemain 2</string>
+    <string name="pemain">Pemain </string>
+    <string name="hasil_permainan">Hasil Permainan</string>
+    <string name="cpu">CPU</string>
+    <string name="seri">SERI!</string>
+    <string name="winner">MENANG!</string>
+    <string name="choose_toast">Memilih</string>
+    <string name="close_snackbar">Tutup</string>
+    <string name="welcome_snackbar">Selamat Datang</string>
+    <string name="pick">Pick First!</string>
+    <string name="empty_field">This field must be filled</string>
 </resources>
