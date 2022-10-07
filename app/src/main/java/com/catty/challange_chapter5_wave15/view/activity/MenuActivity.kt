@@ -43,10 +43,7 @@ class MenuActivity : AppCompatActivity() {
         }
     }
 
-    /**
-    Passing data player name with Parcelable and game category (SinglePlayer or MultiPlayer)
-    with Bundle to MainActivity
-     **/
+
     private fun setNamePlayerAndCategory (gameCategory : Boolean){
         val intent = Intent(this,MainActivity::class.java)
         val playerParcelable = PlayerWithParcelable(getNameSerializable())
@@ -57,7 +54,7 @@ class MenuActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
-    // Receive data Serializable from ThirdLandingPageFragment
+
     private fun getNameSerializable(): String {
         val personSerializable = intent
             .getSerializableExtra(ThirdLandingPageFragment.EXTRA_NAME_SERIALIZABLE)
