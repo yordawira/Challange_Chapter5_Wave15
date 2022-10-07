@@ -4,6 +4,159 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".view.activity.MainActivity">
+
+    <TextView
+        android:id="@+id/tv_header_kertas"
+        android:layout_marginTop="28dp"
+        android:text="@string/paper"
+        android:textSize="40sp"
+        android:textColor="@color/header_yellow"
+        style="@style/header_game"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_close"
+        android:maxWidth="50dp"
+        android:scaleType="fitCenter"
+        android:layout_margin="10dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_header_gunting"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="-25dp"
+        android:text="@string/scissor"
+        android:textSize="40sp"
+        android:textColor="@color/header_green"
+        style="@style/header_game"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_header_kertas" />
+
+    <TextView
+        android:id="@+id/tv_header_batu"
+        android:layout_marginTop="-24dp"
+        android:layout_marginStart="21dp"
+        android:text="@string/rock"
+        android:textSize="40sp"
+        android:textColor="@color/header_purple"
+        style="@style/header_game"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_header_gunting" />
+
+    <TextView
+        android:id="@+id/tv_player_name"
+        android:layout_marginEnd="265dp"
+        android:text="@string/player"
+        android:textSize="25sp"
+        style="@style/player_name"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/iv_batu_player"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_player_komputer"
+        android:layout_marginStart="265dp"
+        android:text="@string/com"
+        android:textSize="25sp"
+        style="@style/player_name"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/iv_batu_opponent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_batu_player"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="16dp"
+        android:maxWidth="77dp"
+        android:maxHeight="77dp"
+        style="@style/rock_drawable"
+        app:layout_constraintBottom_toTopOf="@+id/iv_kertas_player"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_batu_opponent"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        android:maxWidth="77dp"
+        android:maxHeight="77dp"
+        style="@style/rock_drawable"
+        app:layout_constraintBottom_toTopOf="@+id/iv_kertas_opponent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_kertas_player"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="100dp"
+        android:maxWidth="77dp"
+        android:maxHeight="77dp"
+        style="@style/paper_drawable"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_versus"
+        android:layout_marginTop="40dp"
+        android:textSize="75sp"
+        style="@style/versus_view"
+        android:justificationMode="inter_word"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/iv_kertas_opponent"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="100dp"
+        android:maxWidth="77dp"
+        android:maxHeight="77dp"
+        style="@style/paper_drawable"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_gunting_player"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:maxWidth="77dp"
+        android:maxHeight="77dp"
+        style="@style/scissor_drawable"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_kertas_player" />
+
+    <ImageView
+        android:id="@+id/iv_gunting_opponent"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:maxWidth="77dp"
+        android:maxHeight="77dp"
+        style="@style/scissor_drawable"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_kertas_opponent" />
+
+    <ImageView
+        android:id="@+id/iv_refresh"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:maxWidth="50dp"
+        android:maxHeight="50dp"
+        style="@style/refresh_drawable"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

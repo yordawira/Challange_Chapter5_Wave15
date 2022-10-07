@@ -14,9 +14,9 @@ class SplashScreenActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        setContentView(binding.root)
         binding = ActivitySplashScreenBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
 
         binding.ivFirstSplashScreen.load(SPLASH_SCREEN_URL){
             crossfade(1950)
