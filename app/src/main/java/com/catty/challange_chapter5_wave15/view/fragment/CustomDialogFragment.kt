@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.DialogFragment
+import com.catty.challange_chapter5_wave15.databinding.FragmentCostumeDialogBinding
 
 class CustomDialogFragment(
     private val closeDialog :()-> Unit,
@@ -15,7 +16,7 @@ class CustomDialogFragment(
     result : String
 ) : DialogFragment() {
 
-    private lateinit var binding : FragmentCustomDialogBinding
+    private lateinit var binding: FragmentCostumeDialogBinding
     private var name : String
     private var result : String
 
@@ -29,13 +30,7 @@ class CustomDialogFragment(
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = FragmentCustomDialogBinding.inflate(layoutInflater,container,false)
-        /**
-        I set "setCancelable" to false, because dialog in the flowchart only has two decisions.
-        All those decisions are "back to menu" and "play again". Play again button automatically
-        refresh this game. Refresh button can used in multiplayer mode, when player 1 has
-        selected a hand and player 2 has not selected a hand.
-         **/
+        binding = FragmentCostumeDialogBinding.inflate(layoutInflater,container,false)
         dialog?.setCancelable(false)
         return binding.root
     }
