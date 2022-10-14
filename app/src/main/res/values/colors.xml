@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="primary_color">#8D6E63</color>
-    <color name="secondary_color">#795548</color>
+    <color name="primary_color">#FFCC80</color>
+    <color name="secondary_color">#FFB74D</color>
     <color name="blue_player_name">#FF000000</color>
     <color name="header_yellow">#f6b26b</color>
     <color name="header_green">#93c47d</color>
@@ -13,8 +13,9 @@
     <color name="black">#FF000000</color>
     <color name="grey">#F1F0F0</color>
     <color name="dark_grey">#ECECEC</color>
-    <color name="white">#6D4C41</color>
+    <color name="orange_400">#FFA726</color>
     <color name="blue_landing_page">#0070C0</color>
     <color name="button_dialod_1">#9b6dbb</color>
     <color name="button_dialod_2">#ff9900</color>
+    <color name="white">#FFFFFF</color>
 </resources>

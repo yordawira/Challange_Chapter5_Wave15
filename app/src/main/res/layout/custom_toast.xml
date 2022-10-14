@@ -16,8 +16,7 @@
         android:scaleType="fitCenter"
         android:maxWidth="30dp"
         android:layout_marginStart="26dp"
-        android:layout_gravity="center_vertical"
-        android:src="@drawable/ic_rocket_launch"/>
+        android:layout_gravity="center_vertical" />
 
     <TextView
         android:id="@+id/tvChoose"
