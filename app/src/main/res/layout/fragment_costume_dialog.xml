@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginHorizontal="62dp"
-    android:backgroundTint="@color/white"
+    android:backgroundTint="@color/orange_400"
     android:background="@drawable/bg_dialog">
 
     <TextView
